@@ -1,11 +1,24 @@
 .certificate-wrapper {
   display: flex;
+  justify-content: space-around;
+  text-align: left;
+  background-image: url('../images/svg/section-4-bg.svg');
+  background-repeat: no-repeat;
+  /*background-position: center;*/
+}
+
+.certificate-container {
+  background-image: url('../images/svg/planet.svg');
+  background-repeat: no-repeat;
+  font-size: 35px;
+  width: 504px;
 }
 
 .certificate-title {
   font-family: 'Oswald-Bold';
   text-transform: uppercase;
   color: $bbc;
+  margin-bottom: 27px;
 
   &__item {
     color: $TFixColor;
@@ -14,4 +27,19 @@
 
 .certificate-text {
   color: $bbc;
+}
+
+.certificate-img {
+  width: 661px;
+  position: relative;
+
+  &__back {
+    flex-wrap: nowrap;
+  }
+  &__front {
+    position: absolute;
+    /*left: 0;
+    top: 0;*/
+    transform: translate (-50%, -50%);
+  }
 }
