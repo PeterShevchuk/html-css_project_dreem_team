@@ -1,44 +1,95 @@
 .skillsBlock {
-    padding: 0 15px;
+  padding: 0 15px;
+  text-align: center;
 }
 
 .textTitle {
-    text-align: center;
-    text-transform: uppercase;
-    font-family: "Oswald", sans-serif;
-    font-size: 15px;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'Oswald', sans-serif;
+  font-size: 15px;
+  line-height: 20px;
 }
-
-.skills_title {
+.skills {
+  text-align: left;
+  margin-bottom: 55px;
+  &__title {
     font-weight: 700;
     font-size: 20px;
+    line-height: 25px;
     color: #000000;
     & .one {
-        color: #c7007c;
+      color: #c7007c;
     }
     & .two {
-        color: #f0ca6d;
+      color: #f0ca6d;
     }
     & .three {
-        color: #5f7cec;
+      color: #5f7cec;
     }
+  }
 }
-.skills_img {
-    margin: 0 auto;
-    display: block;
+.skills__item {
+  margin-bottom: 20px;
 }
-.skills_text {
-    font-size: 14px;
-    & .skills_text-bold {
-        font-weight: 700;
-        color: #000000;
-    }
+.skills__img {
+  margin: 0 auto;
+  display: block;
+  margin-bottom: 38px;
 }
-
+.skills__text {
+  font-size: 14px;
+  & .skills__text-bold {
+    font-weight: 700;
+    color: #000000;
+  }
+}
+.btn {
+  padding: 20px 45px;
+}
 @media (min-width: $BrPT) {
-
-  
+  .skills {
+    margin-bottom: 90px;
+  }
+  .skills__img {
+    width: 190px;
+    height: 190px;
+    margin-bottom: 46px;
+  }
+  .skills__title {
+    font-size: 25px;
+    line-height: 30px;
+  }
+  .skills__item {
+    margin-bottom: 46px;
+  }
+  .textTitle {
+    font-size: 20px;
+    line-height: 45px;
+  }
+}
+@media (min-width: $BrPT2) {
 }
 @media (min-width: $BrPD) {
-  
+  .skills__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .skills__item {
+    max-width: 410px;
+    width: 33.3333%;
+  }
+  .skills__img {
+    margin-bottom: 54px;
+  }
+  .skills__title {
+    font-size: 30px;
+    line-height: 36px;
+  }
+  .textTitle {
+    font-size: 30px;
+  }
+  .skills__item:not(:first-child) {
+    margin-left: 82px;
+  }
 }
