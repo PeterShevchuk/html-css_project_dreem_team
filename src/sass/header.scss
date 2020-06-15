@@ -1,5 +1,66 @@
 .waper-bacground {
-  background: url(../images/svg/header-bg.svg) no-repeat center;
+  background: url(../images/svg/header-bg.svg) no-repeat;
   background-size: cover;
-  //   min-height: 448px;
+  background-position: center;
+  //   height: 500px;
+}
+
+.page-nav {
+  display: flex;
+  padding: 18px 15px 72px;
+  //   padding-bottom: 72px;
+  align-items: baseline;
+  justify-content: space-between;
+  &__logo {
+    // padding-left: 16px 0;
+  }
+}
+
+.header-menu {
+  display: none;
+}
+
+.header-leyout {
+  min-width: 260px;
+  padding: 18px 15px;
+  &__sub {
+    font-family: 'HelveticaNeueCyr';
+    color: $bbc;
+    line-height: 22px;
+    margin: 0 auto;
+    max-width: 187px;
+    padding-bottom: 40px;
+  }
+  &__titel {
+    font-size: 20px;
+    font-family: 'HelveticaNeueCyr';
+    color: $bbc;
+    font-weight: 700;
+    line-height: 26px;
+    margin: 0 auto;
+    max-width: 260px;
+    padding-bottom: 40px;
+  }
+  &__link {
+    font-size: 15px;
+    font-family: 'HelveticaNeueCyr';
+    color: $bbc;
+    font-weight: 700;
+    line-height: 22px;
+    text-align: center;
+    &::after {
+      display: block;
+      background-color: rgb(255, 255, 255);
+      content: '';
+      opacity: 0.302;
+      width: 102px;
+      height: 2px;
+      margin: 0 auto;
+    }
+  }
+  &__icon {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+  }
 }
