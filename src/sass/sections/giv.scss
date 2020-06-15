@@ -1,0 +1,16 @@
+.giv {
+  margin-bottom: 20px;
+  &__text {
+    font-size: 20px;
+    line-height: 26px;
+    font-family: 'HelveticaNeueCyr';
+    color: rgb(44, 44, 44);
+    font-weight: 700;
+    margin: 0 auto;
+    max-width: 260px;
+  }
+}
+
+.sub {
+  color: $TFixColor;
+}
