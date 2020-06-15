@@ -29,7 +29,8 @@ body {
   font-weight: $bfw;
   font-size: $bfs;
   background-color: $bbc;
-  min-width: $bmh;
+  min-width: $bminw;
+  max-width: $bmaxw;
   line-height: $blh;
 }
 
