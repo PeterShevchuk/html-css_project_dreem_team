@@ -1,0 +1,70 @@
+/* Helvetica */
+@font-face {
+  font-family: 'HelveticaNeueCyr-Black';
+  font-style: normal;
+  font-weight: 400;
+  src: local('HelveticaNeueCyr-Black'), local('HelveticaNeueCyr-Black'),
+    url('../fonts/HelveticaNeueCyr-Black.woff2') format('woff2'),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url('../fonts/HelveticaNeueCyr-Black.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+@font-face {
+  font-family: 'HelveticaNeueCyr-Bold';
+  font-style: bold;
+  font-weight: 700;
+  src: local('HelveticaNeueCyr-Bold'), local('HelveticaNeueCyr-Bold'),
+    url('../fonts/HelveticaNeueCyr-Bold.woff2') format('woff2'),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url('../fonts/HelveticaNeueCyr-Bold.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+@font-face {
+  font-family: 'HelveticaNeueCyr-Medium';
+  font-style: normal;
+  font-weight: 500;
+  src: local('HelveticaNeueCyr-Medium'), local('HelveticaNeueCyr-Medium'),
+    url('../fonts/HelveticaNeueCyr-Medium.woff2') format('woff2'),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url('../fonts/HelveticaNeueCyr-Medium.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+@font-face {
+  font-family: 'HelveticaNeueCyr-Roman';
+  font-style: normal;
+  font-weight: 400;
+  src: local('HelveticaNeueCyr-Roman'), local('HelveticaNeueCyr-Roman'),
+    url('../fonts/HelveticaNeueCyr-Roman.woff2') format('woff2'),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url('../fonts/HelveticaNeueCyr-Roman.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+@font-face {
+  font-family: 'MarckScript-Regular';
+  font-style: normal;
+  font-weight: 400;
+  src: local('MarckScript-Regular'), local('HMarckScript-Regular'),
+    url('../fonts/MarckScript-Regular.woff2') format('woff2'),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url('../fonts/MarckScript-Regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+@font-face {
+  font-family: 'Mistral';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Mistral'), local('Mistral'),
+    url('../fonts/Mistral.woff2') format('woff2'),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */ url('../fonts/Mistral.woff')
+      format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+@font-face {
+  font-family: 'Oswald-Bold';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Oswald-Bold'), local('Oswald-Bold'),
+    url('../fonts/Oswald-Bold.woff2') format('woff2'),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */ url('../fonts/Oswald-Bold.woff')
+      format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
