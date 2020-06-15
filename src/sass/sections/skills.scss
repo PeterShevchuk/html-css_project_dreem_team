@@ -1,3 +1,44 @@
+.skillsBlock {
+    padding: 0 15px;
+}
+
 .textTitle {
     text-align: center;
+    text-transform: uppercase;
+    font-family: "Oswald", sans-serif;
+    font-size: 15px;
+}
+
+.skills_title {
+    font-weight: 700;
+    font-size: 20px;
+    color: #000000;
+    & .one {
+        color: #c7007c;
+    }
+    & .two {
+        color: #f0ca6d;
+    }
+    & .three {
+        color: #5f7cec;
+    }
+}
+.skills_img {
+    margin: 0 auto;
+    display: block;
+}
+.skills_text {
+    font-size: 14px;
+    & .skills_text-bold {
+        font-weight: 700;
+        color: #000000;
+    }
+}
+
+@media (min-width: $BrPT) {
+
+  
+}
+@media (min-width: $BrPD) {
+  
 }
