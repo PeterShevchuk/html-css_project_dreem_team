@@ -29,7 +29,9 @@ body {
   font-weight: $bfw;
   font-size: $bfs;
   background-color: $bbc;
-  min-width: $bmh;
+  min-width: $bminw;
+  max-width: $bmaxw;
+  line-height: $blh;
 }
 
 .container {
@@ -41,7 +43,7 @@ body {
   display: inline-block;
   font-family: "HelveticaNeueCyr", sans-serif;
   color: #ffffff;
-  font-size: 19px;
+  font-size: 13px;
   font-weight: 700;
   padding: 20px 50px;
   border: 0;
