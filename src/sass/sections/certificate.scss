@@ -1,0 +1,17 @@
+.certificate-wrapper {
+  display: flex;
+}
+
+.certificate-title {
+  font-family: 'Oswald-Bold';
+  text-transform: uppercase;
+  color: $bbc;
+
+  &__item {
+    color: $TFixColor;
+  }
+}
+
+.certificate-text {
+  color: $bbc;
+}
