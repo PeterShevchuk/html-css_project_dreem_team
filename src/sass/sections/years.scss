@@ -45,16 +45,16 @@
     font-size: 25px;
     line-height: 1.2;
     color: #eebf3e;
+    margin-bottom: 16px;
 }
 .years__age sup {
     font-weight: 400;
     font-size: 13px;
     line-height: 22px;
     padding-left: 6px;
+    padding-bottom: 18px;
+    // border-bottom: 2px solid #eebf3e;
 }
-.years__age sup::after {
-    content:'';
-    display: block;
-    
+.years__about {
 
 }
