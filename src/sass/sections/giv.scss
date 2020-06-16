@@ -9,8 +9,22 @@
     margin: 0 auto;
     max-width: 260px;
   }
-}
-
-.sub {
-  color: $TFixColor;
+  .kids {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 15px 20px;
+    &::before {
+      display: block;
+      content: url(../../images/header_img/kids.svg);
+      position: absolute;
+      z-index: -1;
+      min-width: 320px;
+    }
+    &__icon {
+      display: block;
+      max-width: 100%;
+    }
+  }
 }

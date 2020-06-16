@@ -1,25 +1,70 @@
 .waper-bacground {
-  background: url(../images/header-bg.png) no-repeat;
+  background: url(../images/header_img/header-bg.png) no-repeat;
   background-size: 100% 100%;
   background-position: center;
-  max-height: 440px;
+  // max-height: 420px;
   margin-bottom: 80px;
 }
 
-.page-nav {
+.header-nav {
   display: flex;
   padding: 18px 15px 72px;
   align-items: baseline;
   justify-content: space-between;
 }
 
+@media (min-width: $BrPT) {
+  .header-nav {
+    padding-top: 54px;
+  }
+}
+
 .header-menu {
   display: none;
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
+  &__item {
+    margin-left: 75px;
+    &:first-child {
+      margin: 0;
+    }
+  }
+  &__link {
+    font-size: 15px;
+    font-family: 'HelveticaNeueCyr';
+    color: rgb(255, 255, 255);
+    line-height: 20px;
+    &:hover,
+    &:focus {
+      cursor: pointer;
+      color: $TFixColor;
+    }
+    &::after {
+      display: block;
+      content: '';
+      width: 0px;
+      height: 1px;
+      background-color: $TFixColor;
+      transition: width 200ms linear;
+      transform: translateY(1px);
+    }
+    &:hover::after,
+    &:focus::after {
+      width: 100%;
+    }
+  }
+}
+
+@media (min-width: $BrPT) {
+  .header-menu {
+    display: flex;
+  }
 }
 
 .header-leyout {
   min-width: 260px;
-  padding: 18px 15px;
+  padding: 0 15px;
   &__sub {
     font-family: 'HelveticaNeueCyr';
     color: $bbc;
@@ -59,6 +104,15 @@
   &__icon {
     display: block;
     width: 100%;
+    height: 100%;
     margin: 0 auto;
+  }
+}
+@media (min-width: $BrPT) {
+  .header-leyout {
+    min-width: 500px;
+    &__sub {
+      max-width: 500px;
+    }
   }
 }
