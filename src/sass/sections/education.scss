@@ -60,9 +60,9 @@
     background-position-x: right, center;
     background-position-y: bottom, top;
     background-size: 300px 370px, cover;
-  }
-  .textTitle {
-    margin-bottom: 80px;
+    & .textTitle {
+      margin-bottom: 80px;
+    }
   }
   .education {
     &__item-title {

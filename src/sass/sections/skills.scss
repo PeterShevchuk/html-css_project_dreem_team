@@ -2,15 +2,9 @@
   padding: 0 15px;
   text-align: center;
   margin-bottom: 75px;
-}
-
-.textTitle {
-  text-align: center;
-  text-transform: uppercase;
-  font-family: 'Oswald', sans-serif;
-  font-size: 15px;
-  line-height: 20px;
-  margin-bottom: 26px;
+  & .btn {
+    padding: 20px 45px;
+  }
 }
 .skills {
   text-align: left;
@@ -48,9 +42,7 @@
     margin-bottom: 38px;
   }
 }
-.btn {
-  padding: 20px 45px;
-}
+
 @media (min-width: $BrPT) {
   .skills {
     margin-bottom: 90px;
@@ -67,9 +59,11 @@
       margin-bottom: 46px;
     }
   }
-  .textTitle {
-    font-size: 20px;
-    line-height: 45px;
+  .skillsBlock {
+    & .textTitle {
+      font-size: 20px;
+      line-height: 45px;
+    }
   }
 }
 @media (min-width: $BrPT2) {
@@ -97,8 +91,10 @@
       line-height: 36px;
     }
   }
-  .textTitle {
-    font-size: 30px;
-    margin-bottom: 62px;
+  .skillsBlock {
+    & .textTitle {
+      font-size: 30px;
+      margin-bottom: 62px;
+    }
   }
 }
