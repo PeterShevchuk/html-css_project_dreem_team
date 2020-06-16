@@ -1,6 +1,7 @@
 .skillsBlock {
   padding: 0 15px;
   text-align: center;
+  margin-bottom: 75px;
 }
 
 .textTitle {
@@ -9,6 +10,7 @@
   font-family: 'Oswald', sans-serif;
   font-size: 15px;
   line-height: 20px;
+  margin-bottom: 26px;
 }
 .skills {
   text-align: left;
@@ -28,20 +30,22 @@
       color: #5f7cec;
     }
   }
-}
-.skills__item {
-  margin-bottom: 20px;
-}
-.skills__img {
-  margin: 0 auto;
-  display: block;
-  margin-bottom: 38px;
-}
-.skills__text {
-  font-size: 14px;
-  & .skills__text-bold {
-    font-weight: 700;
-    color: #000000;
+  &__item {
+    margin-bottom: 20px;
+  }
+  &__img {
+    margin: 0 auto;
+    display: block;
+  }
+  &__text {
+    font-size: 14px;
+    & .skills__text-bold {
+      font-weight: 700;
+      color: #000000;
+    }
+  }
+  &__item:not(:last-child) {
+    margin-bottom: 38px;
   }
 }
 .btn {
@@ -50,18 +54,18 @@
 @media (min-width: $BrPT) {
   .skills {
     margin-bottom: 90px;
-  }
-  .skills__img {
-    width: 190px;
-    height: 190px;
-    margin-bottom: 46px;
-  }
-  .skills__title {
-    font-size: 25px;
-    line-height: 30px;
-  }
-  .skills__item {
-    margin-bottom: 46px;
+    &__img {
+      width: 190px;
+      height: 190px;
+      margin-bottom: 46px;
+    }
+    &__title {
+      font-size: 25px;
+      line-height: 30px;
+    }
+    &__item {
+      margin-bottom: 46px;
+    }
   }
   .textTitle {
     font-size: 20px;
@@ -71,25 +75,30 @@
 @media (min-width: $BrPT2) {
 }
 @media (min-width: $BrPD) {
-  .skills__list {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  .skills__item {
-    max-width: 410px;
-    width: 33.3333%;
-  }
-  .skills__img {
-    margin-bottom: 54px;
-  }
-  .skills__title {
-    font-size: 30px;
-    line-height: 36px;
+  .skills {
+    &__list {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    &__item {
+      max-width: 420px;
+      width: calc(33.333% - 80px);
+      margin-bottom: 0;
+      &:not(:first-child) {
+        margin-left: 80px;
+      }
+    }
+    &__img {
+      margin: 0;
+      margin-bottom: 54px;
+    }
+    &__title {
+      font-size: 30px;
+      line-height: 36px;
+    }
   }
   .textTitle {
     font-size: 30px;
-  }
-  .skills__item:not(:first-child) {
-    margin-left: 82px;
+    margin-bottom: 62px;
   }
 }
