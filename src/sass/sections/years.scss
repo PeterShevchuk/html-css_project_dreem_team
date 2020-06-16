@@ -1,13 +1,11 @@
 .years__icon {
     display: block;
-    // width: 40px;
-    // height: 40px;
-    // min-width: 40px;
-    // min-height: 40px;
+    width: 40px;
+    height: 40px;
     margin: 0 auto;
     margin-bottom: 28px;
 }
-.years__title {
+.textTitle {
     font-family: Oswald;
     font-weight: 700;
     font-size: 15px;
@@ -45,6 +43,7 @@
     font-size: 25px;
     line-height: 1.2;
     color: #eebf3e;
+    text-align: left;
     margin-bottom: 16px;
 }
 .years__age sup {
