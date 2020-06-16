@@ -6,10 +6,9 @@
 }
 
 .teachers {
-    margin: 0 auto;
-  padding: 0 10px;
+  margin: 0 auto;
+  // padding: 0 10px;
   position: relative;
-    max-width: 270px;
   &__list {
     display: flex;
     flex-wrap: wrap;
@@ -17,6 +16,10 @@
   &__item {
     box-shadow: 0px 0px 24px 0px rgba(0, 0, 0, 0.1);
     text-align: center;
+    max-width: 270px;
+    min-width: 270px;
+    margin: 20px 250px;
+    min-height: 570px;
   }
   &__img {
     width: 270px;
@@ -47,50 +50,65 @@
     color: #000000;
   }
 }
-
+.slider {
+  &__icon-prev {
+    left: calc(50% - 165px);
+  }
+  &__icon-next {
+    right: calc(50% - 165px);
+  }
+}
 @media (min-width: $BrPT) {
+  .slider {
+    &__icon-prev {
+      left: calc(50% - 215px);
+    }
+    &__icon-next {
+      right: calc(50% - 215px);
+    }
+  }
   .teachersBlock {
-  padding: 0 0 90px;
-  & .textTitle {
-    margin-bottom: 43px;
+    padding: 0 0 90px;
+    & .textTitle {
+      margin-bottom: 43px;
+    }
   }
-}
   .teachers {
-    max-width: 768px;
-    padding: 0  100px;
-   &__img {
-    width: 380px;
-    height: 290px;
-   }
-   &__item {
-    text-align: left;
-    &:not(:first-child) {
-      margin-left: 40px;
+    padding: 0;
+    &__img {
+      width: 380px;
+      height: 290px;
     }
-    
-  }
-      &__title {
-      margin-left: 30px;
+    &__item {
+      text-align: left;
+      max-width: 380px;
+      min-width: 380px;
+      margin: 20px 40px;
+      &:not(:first-child) {
+        margin-left: 40px;
       }
-      &__text {
-    font-size: 16px;
-  }
-  }
-}
-@media (min-width: 1024px) {
-    .teachers {
-    max-width: 1024px;
     }
+    &__title {
+      margin-left: 30px;
+    }
+    &__text {
+      font-size: 16px;
+    }
+  }
 }
 @media (min-width: $BrPD) {
-      .teachers {
-    max-width: 1420px;
+  .slider {
+    &__icon-prev {
+      left: 35px;
     }
-  .teachersBlock {
-  padding: 0 0 143px;
-  & .textTitle {
-    margin-bottom: 76px;
+    &__icon-next {
+      right: 35px;
+    }
   }
-}
-   
+  .teachersBlock {
+    padding: 0 0 143px;
+    & .textTitle {
+      margin-bottom: 76px;
+    }
+  }
 }
