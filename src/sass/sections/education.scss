@@ -9,9 +9,9 @@
     max-width: 1420px;
     padding-bottom: 55px;
   }
-}
-.textTitle {
-  margin-bottom: 60px;
+  & .textTitle {
+    margin-bottom: 60px;
+  }
 }
 .education {
   text-align: left;
@@ -88,9 +88,9 @@
     & .container {
       max-width: 1212px;
     }
-  }
-  .textTitle {
-    text-align: left;
+    & .textTitle {
+      text-align: left;
+    }
   }
   .education {
     &__item-title {
