@@ -1,8 +1,7 @@
 .waper-bacground {
-  background: url(../images/header_img/header-bg.png) no-repeat;
-  background-size: 100% 100%;
-  background-position: center;
-  // max-height: 420px;
+  background: url(../images/svg/header-bg.svg) no-repeat;
+  background-size: cover;
+  background-position: top center;
   margin-bottom: 80px;
 }
 
@@ -15,7 +14,16 @@
 
 @media (min-width: $BrPT) {
   .header-nav {
-    padding-top: 54px;
+    padding: 18px 30px 116px;
+    max-width: 710px;
+    margin: 0 auto;
+  }
+}
+@media (min-width: $BrPT2) {
+  .header-nav {
+    padding: 18px 30px 140px;
+    max-width: 1439px;
+    margin: 0 auto;
   }
 }
 
@@ -39,6 +47,12 @@
     &:focus {
       cursor: pointer;
       color: $TFixColor;
+    }
+    @media (min-width: $BrPT2) {
+      & {
+        font-size: 23px;
+        line-height: 60px;
+      }
     }
     &::after {
       display: block;
@@ -71,7 +85,23 @@
     line-height: 22px;
     margin: 0 auto;
     max-width: 187px;
-    padding-bottom: 40px;
+    padding-bottom: 20px;
+    @media (min-width: $BrPT) {
+      & {
+        max-width: 500px;
+        font-size: 20px;
+        line-height: 24px;
+        padding-bottom: 50px;
+      }
+    }
+    @media (min-width: $BrPT2) {
+      & {
+        max-width: 780px;
+        font-size: 36px;
+        line-height: 40px;
+        padding-bottom: 50px;
+      }
+    }
   }
   &__titel {
     font-size: 20px;
@@ -82,6 +112,21 @@
     margin: 0 auto;
     max-width: 260px;
     padding-bottom: 40px;
+    @media (min-width: $BrPT) {
+      & {
+        max-width: 454px;
+        font-size: 35px;
+        line-height: 40px;
+      }
+    }
+    @media (min-width: $BrPT2) {
+      & {
+        max-width: 1230px;
+        font-size: 60px;
+        line-height: 70px;
+        padding-bottom: 70px;
+      }
+    }
   }
   &__link {
     font-size: 15px;
@@ -98,6 +143,19 @@
       width: 102px;
       height: 2px;
       margin: 0 auto;
+      @media (min-width: $BrPT2) {
+        & {
+          top: 581px;
+          height: 3px;
+          width: 202px;
+        }
+      }
+    }
+    @media (min-width: $BrPT2) {
+      & {
+        font-size: 30px;
+        line-height: 36px;
+      }
     }
   }
   // &__kids {
@@ -108,13 +166,5 @@
     width: 100%;
     height: 100%;
     margin: 0 auto;
-  }
-}
-@media (min-width: $BrPT) {
-  .header-leyout {
-    min-width: 500px;
-    &__sub {
-      max-width: 500px;
-    }
   }
 }

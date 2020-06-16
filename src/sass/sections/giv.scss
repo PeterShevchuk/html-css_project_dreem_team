@@ -8,6 +8,11 @@
     font-weight: 700;
     margin: 0 auto;
     max-width: 260px;
+    @media (min-width: $BrPT) {
+      font-size: 35px;
+      line-height: 45px;
+      max-width: 500px;
+    }
   }
   .kids {
     display: flex;
@@ -25,6 +30,10 @@
     &__icon {
       display: block;
       max-width: 100%;
+      @media (min-width: $BrPT) {
+        width: 250px;
+        height: 150px;
+      }
     }
   }
 }

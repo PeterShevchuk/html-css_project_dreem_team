@@ -5,21 +5,13 @@
     color: rgb(232, 232, 242);
     line-height: 36px;
   }
-  &__titel {
-    font-size: 15px;
-    color: #2c2c2c;
-    font-family: 'Oswald';
-    font-weight: 700;
-    text-transform: uppercase;
-    line-height: 22px;
-  }
 }
 
 .hero-content {
   background: url(../../images/header_img/section-2-bg.png) no-repeat;
-  background-size: 100% 100%;
-  background-position: center;
-  height: 1250px;
+  background-size: cover;
+  background-position: top;
+  min-height: 1250px;
   margin-top: 20px;
 }
 
