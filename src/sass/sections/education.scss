@@ -1,6 +1,6 @@
 .educationBlock {
-  background: url('../../images/sputnik-2M.png') no-repeat,
-    url('../../images/svg/section-2-bg.svg') no-repeat;
+  background: url('../../images/education/sputnik-2M.png') no-repeat,
+    url('../../images/education/section-2-bg.svg') no-repeat;
   background-position-x: right, center;
   background-position-y: bottom, top;
   background-size: auto 170px, cover;
@@ -56,8 +56,8 @@
 
 @media (min-width: $BrPT) {
   .educationBlock {
-    background: url('../../images/sputnik-2T.png') no-repeat,
-      url('../../images/svg/section-2-bg.svg') no-repeat;
+    background: url('../../images/education/sputnik-2T.png') no-repeat,
+      url('../../images/education/section-2-bg.svg') no-repeat;
     background-position-x: right, center;
     background-position-y: bottom, top;
     background-size: 300px 370px, cover;
@@ -80,8 +80,8 @@
 }
 @media (min-width: $BrPD) {
   .educationBlock {
-    background: url('../../images/sputnik-2.png') no-repeat,
-      url('../../images/svg/section-2-bg.svg') no-repeat;
+    background: url('../../images/education/sputnik-2.png') no-repeat,
+      url('../../images/education/section-2-bg.svg') no-repeat;
     background-position-x: right, center;
     background-position-y: bottom, top;
     background-size: 563px, cover;
