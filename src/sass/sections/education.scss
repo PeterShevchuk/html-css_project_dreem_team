@@ -5,6 +5,7 @@
   background-position-y: bottom, top;
   background-size: auto 170px, cover;
   padding: 0 15px;
+  margin-bottom: 40px;
   & .container {
     max-width: 1420px;
     padding-bottom: 55px;
@@ -60,6 +61,7 @@
     background-position-x: right, center;
     background-position-y: bottom, top;
     background-size: 300px 370px, cover;
+    margin-bottom: 70px;
     & .textTitle {
       margin-bottom: 80px;
     }
@@ -85,6 +87,7 @@
     background-size: 563px, cover;
     padding-left: 208px;
     padding-top: 168px;
+    margin-bottom: 125px;
     & .container {
       max-width: 1212px;
     }
