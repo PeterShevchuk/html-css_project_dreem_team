@@ -6,14 +6,15 @@
 }
 
 .teachers {
+    margin: 0 auto;
   padding: 0 10px;
   position: relative;
+    max-width: 270px;
   &__list {
     display: flex;
     flex-wrap: wrap;
   }
   &__item {
-    max-width: 270px;
     box-shadow: 0px 0px 24px 0px rgba(0, 0, 0, 0.1);
     text-align: center;
   }
@@ -55,13 +56,13 @@
   }
 }
   .teachers {
+    max-width: 768px;
     padding: 0  100px;
    &__img {
     width: 380px;
     height: 290px;
    }
    &__item {
-    max-width: 380px;
     text-align: left;
     &:not(:first-child) {
       margin-left: 40px;
@@ -76,8 +77,15 @@
   }
   }
 }
-
+@media (min-width: 1024px) {
+    .teachers {
+    max-width: 1024px;
+    }
+}
 @media (min-width: $BrPD) {
+      .teachers {
+    max-width: 1420px;
+    }
   .teachersBlock {
   padding: 0 0 143px;
   & .textTitle {
