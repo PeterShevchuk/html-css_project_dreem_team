@@ -61,6 +61,37 @@ body {
 .textColor {
   color: $TFixColor;
 }
+.slider {
+  &__icon-prev,
+  &__icon-next {
+    position: absolute;
+    top: 50%;
+    width: 50px;
+    height: 50px;
+    border: 0;
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 1.5px 2.598px 9px 0px rgba(1, 1, 0, 0.1);
+    & svg,
+    & svg {
+      width: 15px;
+      height: 15px;
+      fill: #ebebeb;
+    }
+    &:hover svg,
+    &:hover svg {
+      fill: #4f7df0;
+    }
+  }
+  
+  &__icon-prev {
+    left: 75px;
+  }
+  &__icon-next {
+    right: 75px;
+  
+  }
+}
 @media (min-width: $BrPT) {
   .textTitle {
     font-size: 20px;
