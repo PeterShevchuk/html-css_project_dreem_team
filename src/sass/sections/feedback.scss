@@ -1,0 +1,15 @@
+.feedback-title {
+  font-family: $cmt;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: $bc;
+  margin-bottom: 27px;
+  font-size: 15px;
+  text-align: center;
+
+  &__item {
+    color: $TFixColor;
+    font-size: 15px;
+    text-transform: uppercase;
+  }
+}
