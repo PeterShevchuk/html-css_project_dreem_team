@@ -3,198 +3,196 @@
 //  ===== Years title =====
 
 .yearsBlock .container {
-    max-width: 320px;
+  max-width: 320px;
 }
 
 .yearsBlock {
-    margin-bottom: 46px;
+  margin-bottom: 46px;
 }
 .years__icon {
-    margin: 0 auto;
-    margin: 48px 0 28px 0;
+  margin: 0 auto;
+  margin: 48px 0 28px 0;
 }
 .textTitle {
-    font-family: Oswald;
-    font-weight: 700;
-    font-size: 15px;
-    line-height: 20px;
-    color: #2c2c2c;
-    text-transform: uppercase;
-    text-align: center;
-    margin-bottom: 22px;
+  font-family: Oswald;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 20px;
+  color: #2c2c2c;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 22px;
 }
 .years__subtitle {
-    font-family: HelveticaNeueCyr;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 22px;
-    color: #eebf3e;
-    text-transform: uppercaseta;
-    text-align: center;
-    margin-bottom: 20px;
+  font-family: HelveticaNeueCyr;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  color: #eebf3e;
+  text-transform: uppercaseta;
+  text-align: center;
+  margin-bottom: 20px;
 }
 
 // ===== Years list =====
 
-.years__item:nth-child(2n+1) {
-    background: #f5f9fe;
+.years__item:nth-child(2n + 1) {
+  background: #f5f9fe;
 }
 .years__item:nth-child(2n) {
-    background: #e5f1fb;
+  background: #e5f1fb;
 }
-
+.years__list {
+  align-items: stretch;
+}
 .years__item {
-    padding: 0 20px;
+  padding: 0 20px;
 }
 .years__header {
-    display: block;
-    text-align: left;
+  display: block;
+  text-align: left;
 }
 
 .years__header img {
-    display: inline-block;
-    margin-right: 20px;
+  display: inline-block;
+  margin-right: 20px;
 }
 .years__name {
-    display: inline-block;
-    font-family: HelveticaNeueCyr;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 25px;
-    color: #2c2c2c;
-    padding-top: 42px;
-    margin-bottom: 28px;
+  display: inline-block;
+  font-family: HelveticaNeueCyr;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 25px;
+  color: #2c2c2c;
+  padding-top: 42px;
+  margin-bottom: 28px;
 }
 .years__age {
-    font-family: HelveticaNeueCyr;
-    font-weight: 700;
-    font-size: 25px;
-    line-height: 1.2;
-    color: #eebf3e;
-    text-align: left;
-    margin-bottom: 16px;
+  position: relative;
+  font-family: HelveticaNeueCyr;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 1.2;
+  color: $TFixColor;
+  text-align: left;
+  margin-bottom: 16px;
 }
-.years__age sup {
-    font-weight: 400;
-    font-size: 13px;
-    line-height: 22px;
-    padding-left: 6px;
+.years__age-up {
+  position: absolute;
+  top: -15px;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 22px;
+  margin-left: 6px;
+  border-bottom: 1px solid $TFixColor;
 }
 .years__about {
-    font-family: HelveticaNeueCyr;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 24px;
-    color: #2c2c2c;
-    text-align: left;
-    padding-bottom: 42px;
+  font-family: HelveticaNeueCyr;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: #2c2c2c;
+  text-align: left;
+  padding-bottom: 42px;
 }
 
 @media (min-width: $BrPT) {
-    .yearsBlock .container {
-        max-width: 710px;
-    }
-    .yearsBlock {
-        margin-bottom: 90px;
-    }
-    .yearsBlock br:not(.years__br--displey) {
-        display: none;
-    }
-    .years__icon {
-        margin: 88px 0 32px 0;
-    }
-    .textTitle {
-        font-size: 20px;
-        line-height: 45px;
-        margin-bottom: 38px;
-        
-    }
-    .years__subtitle {
-        font-size: 20px;
-        line-height: 25px;
-        margin-bottom: 36px;
-    }
-    .years__item:nth-child(4) {
-        background: #f5f9fe;
-    }
-    .years__item:nth-child(3) {
-        background: #e5f1fb;
-    }
-    .years__list {
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: center; 
-    }
-    .years__item {
-        width: 340px;
-    }
-    
-    .years__name {
-        font-size: 25px;
-        line-height: 1.2;
-        padding-top: 44px;
-        margin-bottom: 32px;
-    }
-    .years__age {
-        font-size: 30px;
-        line-height: 1.2;
-        margin-bottom: 22px;
-    }
-    .years__about {
-        font-size: 16px;
-        line-height: 30px;
-    }
-    
+  .yearsBlock .container {
+    max-width: 710px;
+  }
+  .yearsBlock {
+    margin-bottom: 90px;
+  }
+  .yearsBlock br:not(.years__br--displey) {
+    display: none;
+  }
+  .years__icon {
+    margin: 88px 0 32px 0;
+  }
+  .textTitle {
+    font-size: 20px;
+    line-height: 45px;
+    margin-bottom: 38px;
+  }
+  .years__subtitle {
+    font-size: 20px;
+    line-height: 25px;
+    margin-bottom: 36px;
+  }
+  .years__item:nth-child(4) {
+    background: #f5f9fe;
+  }
+  .years__item:nth-child(3) {
+    background: #e5f1fb;
+  }
+  .years__list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    align-items: stretch;
+  }
+  .years__item {
+    width: 340px;
+  }
+
+  .years__name {
+    font-size: 25px;
+    line-height: 1.2;
+    padding-top: 44px;
+    margin-bottom: 32px;
+  }
+  .years__age {
+    font-size: 30px;
+    line-height: 1.2;
+    margin-bottom: 22px;
+  }
+  .years__about {
+    font-size: 16px;
+    line-height: 30px;
+  }
 }
 
 @media (min-width: $BrPD) {
-    .yearsBlock .container {
-        max-width: 1454px;
-    }
-    .yearsBlock {
-        margin-bottom: 126px;
-    }
-    .years__icon {
-        margin: 132px 0 64px 0;
-    }
-    .textTitle {
-        font-size: 30px;
-        margin-bottom: 48px;
-    }
-    .years__subtitle {
-        font-size: 30px;
-        line-height: 40px;
-        margin-bottom: 64px;
-    }
-    .years__item:nth-child(2n+1) {
-        background: #f5f9fe;
-    }
-    .years__item:nth-child(2n) {
-        background: #e5f1fb;
-    }
-    .years__list {
-        flex-wrap: nowrap;
-    }
-    .years__item {
-        width: 356px;
-    }
-    .years__name {
-        font-size: 30px;
-        line-height: 1.2;
-        padding-top: 64px;
-        margin-bottom: 34px;
-    }
-    .years__age {
-        font-size: 40px;
-        line-height: 1.2;
-        margin-bottom: 30px;
-    }
-    
-    
+  .yearsBlock .container {
+    max-width: 1454px;
+  }
+  .yearsBlock {
+    margin-bottom: 126px;
+  }
+  .years__icon {
+    margin: 132px 0 64px 0;
+  }
+  .textTitle {
+    font-size: 30px;
+    margin-bottom: 48px;
+  }
+  .years__subtitle {
+    font-size: 30px;
+    line-height: 40px;
+    margin-bottom: 64px;
+  }
+  .years__item:nth-child(2n + 1) {
+    background: #f5f9fe;
+  }
+  .years__item:nth-child(2n) {
+    background: #e5f1fb;
+  }
+  .years__list {
+    flex-wrap: nowrap;
+  }
+  .years__item {
+    width: 356px;
+  }
+  .years__name {
+    font-size: 30px;
+    line-height: 1.2;
+    padding-top: 64px;
+    margin-bottom: 34px;
+  }
+  .years__age {
+    font-size: 40px;
+    line-height: 1.2;
+    margin-bottom: 30px;
+  }
 }
-
-
-
-
-
