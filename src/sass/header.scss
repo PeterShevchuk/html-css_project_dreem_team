@@ -177,6 +177,12 @@
     font-weight: 700;
     line-height: 22px;
     text-align: center;
+    transition: all 0.3s linear;
+    &:hover,
+    &:focus {
+      cursor: pointer;
+      color: $TFixColor;
+    }
     &::after {
       display: block;
       background-color: rgb(255, 255, 255);
@@ -185,13 +191,18 @@
       width: 102px;
       height: 2px;
       margin: 0 auto;
+      transition: all 0.3s linear;
       @media (min-width: $BrPT2) {
         & {
-          top: 581px;
           height: 3px;
           width: 202px;
         }
       }
+    }
+    &:hover::after,
+    &:focus::after {
+      cursor: pointer;
+      background-color: $TFixColor;
     }
     @media (min-width: $BrPT2) {
       & {
