@@ -1,0 +1,121 @@
+.hero {
+  &__question {
+    font-size: 30px;
+    font-family: 'HelveticaNeueCyr';
+    color: rgb(232, 232, 242);
+    line-height: 36px;
+    @media (min-width: $BrPT) {
+      & {
+        font-size: 60px;
+        line-height: 72px;
+      }
+    }
+  }
+}
+
+.hero-content {
+  background: url(../../images/header_img/section-2-bg.png) no-repeat;
+  background-size: cover;
+  background-position: top;
+  min-height: 1250px;
+  margin-top: 20px;
+}
+
+.hero-menu {
+  padding-top: 70px;
+  max-width: 300px;
+  display: grid;
+  grid-template-columns: 300px;
+  //   grid-template-rows: repeat(4, 274px);
+  margin: 0 auto;
+  row-gap: 20px;
+  @media (min-width: $BrPT) {
+    & {
+      grid-row: 3;
+      position: relative;
+      row-gap: 139px;
+      padding-top: 94px;
+      max-width: 600px;
+    }
+  }
+  &__list {
+    display: grid;
+    grid-template-rows: 142px 20px 90px;
+    row-gap: 10px;
+    @media (min-width: $BrPT) {
+      & {
+        grid-template-rows: 142px;
+        position: relative;
+      }
+    }
+  }
+  &__list-mark {
+    @media (min-width: $BrPT) {
+      & {
+        grid-row: 3;
+      }
+    }
+  }
+  &__icon {
+    border-radius: 50%;
+    display: block;
+    width: 50%;
+    margin: 0 auto;
+    @media (min-width: $BrPT) {
+      & {
+        width: 237px;
+        height: 233px;
+        margin: 0;
+        position: absolute;
+        left: 0;
+      }
+    }
+  }
+  &__name {
+    font-size: 20px;
+    font-family: 'Mistral';
+    color: rgb(237, 198, 90);
+    line-height: 22px;
+    @media (min-width: $BrPT) {
+      & {
+        position: absolute;
+        bottom: -67px;
+        right: -174px;
+        left: 326px;
+        text-align: left;
+        font-size: 30px;
+        line-height: 35px;
+      }
+    }
+  }
+  &__name::before {
+    display: none;
+    content: url(../../images/header_img/arrowbak.png);
+    position: absolute;
+    left: -67px;
+    top: -15px;
+    @media (min-width: $BrPT) and (max-width: $BrPT2) {
+      & {
+        display: block;
+      }
+    }
+  }
+  &__sub {
+    font-size: 16px;
+    font-family: 'HelveticaNeueCyr';
+    color: rgb(44, 44, 44);
+    line-height: 30px;
+
+    @media (min-width: $BrPT) {
+      & {
+        position: absolute;
+        right: -311px;
+        left: 311px;
+        top: 50px;
+        text-align: left;
+        font-size: 23px;
+        line-height: 35px;
+      }
+    }
+  }
+}
