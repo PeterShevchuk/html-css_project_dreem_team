@@ -154,7 +154,6 @@
 }
 
 @media (min-width: $BrPD) {
-<<<<<<< HEAD
   .yearsBlock .container {
     max-width: 1454px;
   }
@@ -196,49 +195,4 @@
     line-height: 1.2;
     margin-bottom: 30px;
   }
-=======
-    .yearsBlock .container {
-        max-width: 1416px;
-    }
-    .yearsBlock {
-        margin-bottom: 126px;
-    }
-    .years__icon {
-        margin: 132px 0 64px 0;
-    }
-    .textTitle {
-        font-size: 30px;
-        margin-bottom: 48px;
-    }
-    .years__subtitle {
-        font-size: 30px;
-        line-height: 40px;
-        margin-bottom: 64px;
-    }
-    .years__item:nth-child(2n+1) {
-        background: #f5f9fe;
-    }
-    .years__item:nth-child(2n) {
-        background: #e5f1fb;
-    }
-    .years__list {
-        flex-wrap: nowrap;
-    }
-    .years__item {
-        width: 356px;
-    }
-    .years__name {
-        font-size: 30px;
-        line-height: 1.2;
-        padding-top: 64px;
-        margin-bottom: 34px;
-    }
-    .years__age {
-        font-size: 40px;
-        line-height: 1.2;
-        margin-bottom: 30px;
-    }
-    
-    
->>>>>>> years
 }
