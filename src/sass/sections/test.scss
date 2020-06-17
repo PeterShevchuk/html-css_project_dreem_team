@@ -82,5 +82,15 @@
     line-height: 24px;
     color: #6b6f7a;
     text-align: left;
+}
 
+// === checkbox ===
+
+.test__check {
+    display: none;
+}
+.test__check::before {
+    border: 2px solid #eebf3e;
+    width: 20px;
+    height: 20px;
 }
