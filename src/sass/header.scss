@@ -1,4 +1,4 @@
-.waper-bacground {
+.header {
   background: url(../images/svg/header-bg.svg) no-repeat;
   background-size: 140%;
   background-position: top center;
@@ -6,27 +6,27 @@
 }
 
 @media (min-width: 200px) {
-  .waper-bacground {
+  .header {
     background-size: cover;
   }
 }
 
 @media (min-width: $BrPT) {
-  .waper-bacground {
+  .header {
     background-size: 134%;
     margin-bottom: 40px;
   }
 }
 
 @media (min-width: $BrPT2) {
-  .waper-bacground {
+  .header {
     background-size: 154%;
     margin-bottom: 20px;
   }
 }
 
 @media (min-width: 1320px) {
-  .waper-bacground {
+  .header {
     background-size: 118%;
   }
   .wraper {
@@ -35,12 +35,12 @@
 }
 
 @media (min-width: $BrPD) {
-  .waper-bacground {
+  .header {
     background-size: 110%;
   }
 }
 
-.header-nav {
+.headerNav {
   display: flex;
   padding: 18px 15px 72px;
   align-items: baseline;
@@ -48,21 +48,21 @@
 }
 
 @media (min-width: $BrPT) {
-  .header-nav {
+  .headerNav {
     padding: 18px 30px 116px;
     max-width: 710px;
     margin: 0 auto;
   }
 }
 @media (min-width: $BrPT2) {
-  .header-nav {
+  .headerNav {
     padding: 18px 30px 140px;
     max-width: 1439px;
     margin: 0 auto;
   }
 }
 
-.header-menu {
+.headerMenu {
   display: none;
   font-size: 14px;
   margin: 0;
@@ -109,12 +109,12 @@
 }
 
 @media (min-width: $BrPT) {
-  .header-menu {
+  .headerMenu {
     display: flex;
   }
 }
 
-.header-leyout {
+.leyout {
   min-width: 260px;
   padding: 0 15px;
   &__sub {

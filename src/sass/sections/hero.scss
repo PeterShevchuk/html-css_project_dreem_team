@@ -1,4 +1,4 @@
-.hero {
+.heroBlock {
   &__question {
     font-size: 30px;
     font-family: 'HelveticaNeueCyr';
@@ -13,7 +13,7 @@
   }
 }
 
-.hero-content {
+.heroContent {
   background: url(../../images/education/section-2-bg.svg) no-repeat;
   background-size: cover;
   background-position: top;
@@ -21,7 +21,7 @@
   margin-top: 20px;
 }
 
-.hero-menu {
+.heroMenu {
   padding-top: 70px;
   max-width: 300px;
   display: grid;
