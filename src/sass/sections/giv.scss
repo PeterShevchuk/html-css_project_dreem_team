@@ -1,5 +1,13 @@
 .giv {
   margin-bottom: 20px;
+  &__content {
+    max-width: 1040px;
+    @media (min-width: $BrPT2) {
+      & {
+        position: relative;
+      }
+    }
+  }
   &__text {
     font-size: 20px;
     line-height: 26px;
@@ -9,9 +17,29 @@
     margin: 0 auto;
     max-width: 260px;
     @media (min-width: $BrPT) {
-      font-size: 35px;
-      line-height: 45px;
-      max-width: 500px;
+      & {
+        font-size: 35px;
+        line-height: 45px;
+        max-width: 500px;
+      }
+    }
+    @media (min-width: $BrPT2) {
+      & {
+        font-size: 35px;
+        line-height: 45px;
+        max-width: 500px;
+        position: absolute;
+        right: 0;
+        top: 150px;
+        text-align: left;
+      }
+    }
+  }
+  &__over {
+    @media (min-width: $BrPT2) {
+      & {
+        display: none;
+      }
     }
   }
   .kids {
@@ -19,20 +47,61 @@
     position: relative;
     justify-content: center;
     align-items: center;
-    padding: 50px 15px 20px;
+    min-height: 257px;
+    @media (min-width: $BrPT) {
+      & {
+        min-height: 500px;
+      }
+    }
     &::before {
       display: block;
       content: url(../../images/header_img/kids.svg);
       position: absolute;
       z-index: -1;
       min-width: 320px;
+      @media (min-width: $BrPT) {
+        & {
+          min-width: 650px;
+        }
+      }
+      @media (min-width: $BrPT2) {
+        & {
+          left: 30px;
+          min-width: 550px;
+        }
+      }
+      @media (min-width: 1550px) {
+        & {
+          left: -201px;
+          min-width: 68%;
+        }
+      }
     }
     &__icon {
       display: block;
       max-width: 100%;
+      width: 224px;
+      height: 170px;
       @media (min-width: $BrPT) {
-        width: 250px;
-        height: 150px;
+        & {
+          width: 462px;
+          height: 338px;
+        }
+      }
+      @media (min-width: $BrPT2) {
+        & {
+          position: absolute;
+          left: 115px;
+          width: 390px;
+          height: 307px;
+        }
+      }
+      @media (min-width: 1550px) {
+        & {
+          left: -30px;
+          width: 553px;
+          height: 406px;
+        }
       }
     }
   }

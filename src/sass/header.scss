@@ -1,8 +1,43 @@
 .waper-bacground {
   background: url(../images/svg/header-bg.svg) no-repeat;
-  background-size: cover;
+  background-size: 140%;
   background-position: top center;
-  margin-bottom: 80px;
+  // margin-bottom: 80px;
+}
+
+@media (min-width: 200px) {
+  .waper-bacground {
+    background-size: cover;
+  }
+}
+
+@media (min-width: $BrPT) {
+  .waper-bacground {
+    background-size: 134%;
+    margin-bottom: 40px;
+  }
+}
+
+@media (min-width: $BrPT2) {
+  .waper-bacground {
+    background-size: 154%;
+    margin-bottom: 20px;
+  }
+}
+
+@media (min-width: 1320px) {
+  .waper-bacground {
+    background-size: 118%;
+  }
+  .container {
+    max-width: 1920px;
+  }
+}
+
+@media (min-width: $BrPD) {
+  .waper-bacground {
+    background-size: 110%;
+  }
 }
 
 .header-nav {
@@ -43,9 +78,12 @@
     font-family: 'HelveticaNeueCyr';
     color: rgb(255, 255, 255);
     line-height: 20px;
+    border-bottom: 1px solid transparent;
+    transition: all 0.3s linear;
     &:hover,
     &:focus {
       cursor: pointer;
+      border-bottom: 1px solid $TFixColor;
       color: $TFixColor;
     }
     @media (min-width: $BrPT2) {
@@ -54,19 +92,19 @@
         line-height: 60px;
       }
     }
-    &::after {
-      display: block;
-      content: '';
-      width: 0px;
-      height: 1px;
-      background-color: $TFixColor;
-      transition: width 200ms linear;
-      transform: translateY(1px);
-    }
-    &:hover::after,
-    &:focus::after {
-      width: 100%;
-    }
+    // &::after {
+    //   display: block;
+    //   content: '';
+    //   width: 0px;
+    //   height: 1px;
+    //   background-color: $TFixColor;
+    //   transition: width 200ms linear;
+    //   transform: translateY(1px);
+    // }
+    // &:hover::after,
+    // &:focus::after {
+    //   width: 100%;
+    // }
   }
 }
 
@@ -158,9 +196,14 @@
       }
     }
   }
-  // &__kids {
-  //   max-width: 100%;
-  // }
+  &__kids {
+    @media (min-width: $BrPT) {
+      & {
+        // margin: -127px -151px;
+        margin: -61px -12px;
+      }
+    }
+  }
   &__icon {
     display: block;
     width: 100%;
