@@ -1,0 +1,91 @@
+// ========== YEARS ==========
+
+//  ===== Years title =====
+
+.years {
+    margin-bottom: 46px;
+}
+.years__icon {
+    margin: 0 auto;
+    margin: 48px 0 28px 0;
+}
+.textTitle {
+    font-family: Oswald;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 20px;
+    color: #2c2c2c;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 22px;
+}
+.years__subtitle {
+    font-family: HelveticaNeueCyr;
+    font-weight: 700;
+    font-size: 16;
+    line-height: 22px;
+    color: #eebf3e;
+    text-transform: uppercaseta;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+// ===== Years list =====
+
+.years__item:nth-child(odd) {
+    background: #f5f9fe;
+}
+.years__item:nth-child(even) {
+    background: #e8f1fa;
+}
+.years__item {
+    padding: 0 20px;
+}
+.years__header {
+    display: block;
+    text-align: left;
+}
+
+.years__header img {
+    display: inline-block;
+    margin-right: 20px;
+}
+.years__name {
+    display: inline-block;
+    font-family: HelveticaNeueCyr;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 25px;
+    color: #2c2c2c;
+    padding-top: 42px;
+    margin-bottom: 28px;
+}
+.years__age {
+    font-family: HelveticaNeueCyr;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 1.2;
+    color: #eebf3e;
+    text-align: left;
+    margin-bottom: 16px;
+}
+.years__age sup {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 22px;
+    padding-left: 6px;
+}
+.years__about {
+    font-family: HelveticaNeueCyr;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #2c2c2c;
+    text-align: left;
+    padding-bottom: 42px;
+}
+
+
+
+
+
