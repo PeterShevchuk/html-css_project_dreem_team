@@ -1,0 +1,167 @@
+.certificateBlock {
+  background-image: url('../images/svg/section-4-bg.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding-bottom: 60px;
+  & .textTitle {
+    font-family: $cmt;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: $bbc;
+    margin-bottom: 27px;
+    font-size: 15px;
+    text-align: center;
+  }
+  & .textColor {
+    color: $TFixColor;
+    font-size: 15px;
+    text-transform: uppercase;
+  }
+}
+
+.certificate {
+  &__rightBlock {
+    position: relative;
+    width: 270px;
+    font-size: 0px;
+    margin: 0 auto;
+  }
+  &__back {
+    flex-wrap: nowrap;
+  }
+
+  &__img-font {
+    position: absolute;
+    top: -15px;
+    left: 20%;
+  }
+  &__leftBlock {
+    padding-top: 40px;
+    padding-bottom: 28px;
+    text-align: center;
+  }
+  &__text {
+    color: $bbc;
+    font-size: 16px;
+    text-align: center;
+    font-weight: bold;
+  }
+}
+
+@media (min-width: $BrPT) {
+  .certificateBlock {
+    & .container {
+      padding-bottom: 167px;
+      background-image: url('../images/svg/confetti.svg');
+      background-repeat: no-repeat;
+      background-position: center;
+      width: 100%;
+      height: 100%;
+    }
+    & .textTitle {
+      font-size: 20px;
+      text-align: left;
+    }
+    & .textColor {
+      font-size: 20px;
+    }
+  }
+
+  .certificate {
+    &__rightBlock {
+      width: 414px;
+      margin-top: 90px;
+    }
+
+    &__img-font {
+      background-image: url('../images/certificate/certificate-tablet-1.png');
+      width: 240px;
+      height: 350px;
+    }
+
+    &__img-left {
+      background-image: url('../images/certificate/certificate-tablet-3.png');
+      width: 207px;
+      height: 300px;
+    }
+
+    &__img-right {
+      background-image: url('../images/certificate/certificate-tablet-2.png');
+      width: 207px;
+      height: 300px;
+    }
+    &__img-font {
+      position: absolute;
+      top: -25px;
+      left: 20%;
+    }
+    &__text {
+      font-size: 25px;
+      text-align: left;
+      line-height: 1.5;
+    }
+    &__leftBlock {
+      background-image: url('../images/planet.png');
+      background-repeat: no-repeat;
+      background-position-x: right;
+      background-position-y: bottom;
+
+      max-width: 550px;
+      padding-top: 90px;
+      margin: 0 auto;
+    }
+  }
+}
+
+@media (min-width: $BrPD) {
+  .certificate {
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+    padding-bottom: 167px;
+    background-image: url('../images/planet.png');
+    background-repeat: no-repeat;
+    background-position: 35% 10%;
+    width: 100%;
+    height: 100%;
+    &__rightBlock {
+      width: 600px;
+    }
+
+    &__img-font {
+      background-image: url('../images/certificate/certificate-desktop-1.png');
+      width: 340px;
+      height: 485px;
+    }
+
+    &__img-left {
+      background-image: url('../images/certificate/certificate-desktop-3.png');
+      width: 300px;
+      height: 420px;
+    }
+
+    &__img-right {
+      background-image: url('../images/certificate/certificate-desktop-2.png');
+      width: 300px;
+      height: 420px;
+    }
+    &__rightBlock {
+      padding-top: 170px;
+      padding-bottom: 225px;
+      background-image: url('../images/svg/confetti.svg');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+    }
+    &__img-font {
+      top: 135px;
+    }
+    &__leftBlock {
+      background-image: none;
+      max-width: 550px;
+      padding-top: 210px;
+      margin: 0 auto;
+    }
+  }
+}

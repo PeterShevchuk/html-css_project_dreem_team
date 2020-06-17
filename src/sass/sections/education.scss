@@ -1,0 +1,103 @@
+.educationBlock {
+  background: url('../../images/education/sputnik-2M.png') no-repeat,
+    url('../../images/education/section-2-bg.svg') no-repeat;
+  background-position-x: right, center;
+  background-position-y: bottom, top;
+  background-size: auto 170px, cover;
+  padding: 0 15px;
+  margin-bottom: 40px;
+  & .container {
+    max-width: 1420px;
+    padding-bottom: 55px;
+  }
+  & .textTitle {
+    margin-bottom: 60px;
+  }
+}
+.education {
+  text-align: left;
+  &__icon-link {
+    width: 18px;
+    height: 18px;
+    fill: none;
+  }
+  &__item {
+    flex-grow: 1;
+    padding-left: 20px;
+    margin-bottom: 38px;
+  }
+  &__icon {
+    padding-top: 5px;
+  }
+  &__item-text {
+    padding-right: 70px;
+  }
+  &__item-title {
+    color: #000000;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 700;
+    margin-bottom: 15px;
+  }
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    &:nth-child(1) .education__icon-link {
+      fill: #ca0078;
+    }
+    &:nth-child(2) .education__icon-link {
+      fill: #eec14d;
+    }
+    &:nth-child(3) .education__icon-link {
+      fill: #5f7cec;
+    }
+  }
+}
+
+@media (min-width: $BrPT) {
+  .educationBlock {
+    background: url('../../images/education/sputnik-2T.png') no-repeat,
+      url('../../images/education/section-2-bg.svg') no-repeat;
+    background-position-x: right, center;
+    background-position-y: bottom, top;
+    background-size: 300px 370px, cover;
+    margin-bottom: 70px;
+    & .textTitle {
+      margin-bottom: 80px;
+    }
+  }
+  .education {
+    &__item-title {
+      font-size: 25px;
+    }
+    &__item-text {
+      font-size: 16px;
+      line-height: 30px;
+    }
+  }
+}
+@media (min-width: $BrPT2) {
+}
+@media (min-width: $BrPD) {
+  .educationBlock {
+    background: url('../../images/education/sputnik-2.png') no-repeat,
+      url('../../images/education/section-2-bg.svg') no-repeat;
+    background-position-x: right, center;
+    background-position-y: bottom, top;
+    background-size: 563px, cover;
+    padding-left: 208px;
+    padding-top: 168px;
+    margin-bottom: 125px;
+    & .container {
+      max-width: 1212px;
+    }
+    & .textTitle {
+      text-align: left;
+    }
+  }
+  .education {
+    &__item-title {
+      font-size: 30px;
+    }
+  }
+}
