@@ -82,6 +82,8 @@
   &__icon {
     display: block;
     margin: 0 auto;
+    width: 135px;
+    height: 135px;
     @media (min-width: $BrPT) {
       & {
         width: 227px;
@@ -115,7 +117,7 @@
   }
   &__name::before {
     display: none;
-    content: url(../../images/header_img/arrowbak.png);
+    content: url(../../images/hero/arrowbak.png);
     position: absolute;
     left: -67px;
     top: -15px;
