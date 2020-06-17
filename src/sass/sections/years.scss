@@ -1,9 +1,13 @@
+// ========== YEARS ==========
+
+//  ===== Years title =====
+
+.years {
+    margin-bottom: 46px;
+}
 .years__icon {
-    display: block;
-    width: 40px;
-    height: 40px;
     margin: 0 auto;
-    margin-bottom: 28px;
+    margin: 48px 0 28px 0;
 }
 .textTitle {
     font-family: Oswald;
@@ -25,10 +29,29 @@
     text-align: center;
     margin-bottom: 20px;
 }
+
+// ===== Years list =====
+
 .years__item:nth-child(odd) {
     background: #f5f9fe;
 }
+.years__item:nth-child(even) {
+    background: #e8f1fa;
+}
+.years__item {
+    padding: 0 20px;
+}
+.years__header {
+    display: block;
+    text-align: left;
+}
+
+.years__header img {
+    display: inline-block;
+    margin-right: 20px;
+}
 .years__name {
+    display: inline-block;
     font-family: HelveticaNeueCyr;
     font-weight: 700;
     font-size: 20px;
@@ -51,9 +74,18 @@
     font-size: 13px;
     line-height: 22px;
     padding-left: 6px;
-    padding-bottom: 18px;
-    // border-bottom: 2px solid #eebf3e;
 }
 .years__about {
-
+    font-family: HelveticaNeueCyr;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #2c2c2c;
+    text-align: left;
+    padding-bottom: 42px;
 }
+
+
+
+
+
