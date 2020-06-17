@@ -11,20 +11,28 @@
 .test__icon {
     margin: 42px 0 20px 0;
 }
+.testBlock br.test__br--displey {
+    display: none;
+}
 .test__title {
     font-family: HelveticaNeueCyr;
     font-weight: 700;
     font-size: 16px;
     line-height: 22px;
     color: #ffffff;
-    padding-bottom: 26px;
+    margin-bottom: 26px;
 }
 .test__list {
+    display: inline-block;
     background: #ffffff;
+    width: 290px;
     padding: 0 30px;
-    margin: 0 16px;
+    margin: 0 auto;
 }
-.test .textTitle { 
+.test__main {
+    margin-bottom: 22px;
+}
+.testBlock .textTitle { 
     padding-top: 32px;
     padding-bottom: 20px;
     margin-bottom: -1px;
@@ -36,7 +44,6 @@
     line-height: 24px;
     color: #6b6f7a;
     text-align: left;   
-    margin-bottom: 22px;
 }
 
 // ===== Form =====
@@ -50,13 +57,7 @@
     text-align: left;
     margin-bottom: 26px;
 }
-.test__question {
-    margin-bottom: 48px;
-} 
-.test__question:last-child {
-    margin-bottom: 32px;
-}
-.test__question-text {
+.test__askAbout {
     font-family: HelveticaNeueCyr;
     font-weight: 500;
     font-size: 17px;
@@ -65,14 +66,19 @@
     text-align: left;
     margin-bottom: 34px;
 }
+.test__question {
+    margin-bottom: 48px;
+} 
+.test__question:last-child {
+    margin-bottom: 32px;
+}
+
 .test__question-variant {
-    display: inline-block;
     font-family: HelveticaNeueCyr;
     font-weight: 400;
     font-size: 14px;
     line-height: 27px;
     color: #eebf3e;
-    margin: 0 154px 16px 12px;
 }
 .test__question-answer {
     display: block;
@@ -93,4 +99,74 @@
     border: 2px solid #eebf3e;
     width: 20px;
     height: 20px;
+}
+
+
+
+
+@media (min-width: $BrPT) {
+    .testBlock .container {
+        max-width: 710px;
+    }
+    .test__icon {
+        margin: 74px 0 32px 0;
+    }
+    .test__title {
+        font-size: 20px;
+        line-height: 25px;
+        margin-bottom: 32px;
+    }
+    .testBlock br {
+        display: none;
+    }
+    .testBlock br.test__br--displey {
+        display: block;
+    }
+    .test__list {
+        width: 680px;
+        padding: 0 38px;
+    }
+    .test__main {
+        margin-bottom: 36px;
+    }
+    .testBlock .textTitle { 
+        padding-top: 30px;
+        padding-bottom: 20px;
+        margin-bottom: -1px;
+    }
+    .test__about { 
+        font-size: 16px;
+        line-height: 30px; 
+    }
+    
+
+}
+
+@media (min-width: $BrPD) {
+    .testBlock .container {
+        max-width: 1416px;
+    }
+    .test__icon {
+        margin: 120px 0 56px 0;
+    }
+    .test__title {
+        font-size: 30px;
+        line-height: 40px;
+        margin-bottom: 64px;
+    }
+    .test__list {
+        width: 1420px;
+        padding: 0 144px;
+    }
+    .test__main {
+        width: 262px;
+        padding: 0 10px;
+        margin-bottom: 216px;
+    }
+    .testBlock .textTitle { 
+        text-align: left;
+        padding-top: 122px;
+        padding-bottom: 40px;
+        margin-bottom: -1px;
+    }
 }
