@@ -1,81 +1,52 @@
-.feedback-title {
-  font-family: $cmt;
-  font-weight: 700;
-  text-transform: uppercase;
-  color: #000000;
-  margin-bottom: 27px;
-  font-size: 15px;
-  text-align: center;
-
-  &__item {
-    color: $TFixColor;
-    font-size: 15px;
-    text-transform: uppercase;
-  }
-}
-
-.feedback-container {
+.feedbackBlock {
   margin-top: 55px;
 }
 
-.feedback-slider {
+.feedback {
   margin: 0 auto;
 
-  &__container {
+  &__list {
     width: 215px;
     margin: 0 auto;
   }
-}
-
-.feedback-list {
-  padding-top: 35px;
-  padding-left: 24px;
-  padding-right: 24px;
-  padding-bottom: 35px;
-  box-shadow: 0px 0px 24px 0px rgba(0, 0, 0, 0.1);
-
-  &__quotes {
+  &__item {
+    padding-top: 35px;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-bottom: 35px;
+    box-shadow: 0px 0px 24px 0px rgba(0, 0, 0, 0.1);
+  }
+  &__icon {
     margin-top: 25px;
     margin-bottom: 25px;
   }
-}
 
-.feedback-list_title {
-  margin-bottom: 25px;
-  font-size: 21px;
-  font-family: $fff;
-  color: #000000;
-}
+  &__title-name {
+    margin-bottom: 25px;
+    font-size: 21px;
+    font-family: $fff;
+    color: #000000;
+  }
 
-feedback-list_phar {
-  font-size: 14px;
+  &__text {
+    font-size: 14px;
+  }
 }
 
 @media (min-width: $BrPT) {
-  .feedback-title {
-    font-size: 20px;
-    &__item {
-      font-size: 20px;
-    }
-  }
 }
 
 @media (min-width: $BrPD) {
-  .feedback-title {
-    font-size: 30px;
+  .feedback {
+    &__list {
+      width: 1225px;
+      display: flex;
+      justify-content: space-between;
+      margin-top: 86px;
+    }
 
     &__item {
-      font-size: 30px;
+      width: 380px;
     }
-  }
-  .feedback-slider__container {
-    width: 1225px;
-    display: flex;
-    justify-content: space-between;
-    margin-top: 86px;
-  }
-
-  .feedback-list {
-    width: 380px;
   }
 }

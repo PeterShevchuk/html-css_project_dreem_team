@@ -1,4 +1,5 @@
 $(document).ready(function () {
+  // TEACHERS SLIDER START
   $('.teachers__list').slick({
     variableWidth: true,
     arrows: true,
@@ -32,4 +33,5 @@ $(document).ready(function () {
       },
     ],
   });
+  // TEACHERS SLIDER END
 });
