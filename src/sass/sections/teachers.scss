@@ -9,6 +9,9 @@
   margin: 0 auto;
   // padding: 0 10px;
   position: relative;
+  &__background {
+    display: none;
+  }
   &__list {
     display: flex;
     flex-wrap: wrap;
@@ -75,6 +78,30 @@
   }
   .teachers {
     padding: 0;
+    &__background {
+      display: block;
+      position: absolute;
+      background-image: linear-gradient(
+        to right,
+        rgb(255, 255, 255),
+        rgba(255, 255, 255, 0.8),
+        rgba(255, 255, 255, 0.6),
+        rgba(255, 255, 255, 0.4),
+        rgba(255, 255, 255, 0.2),
+        rgba(255, 255, 255, 0),
+        rgba(255, 255, 255, 0.17),
+        rgba(255, 255, 255, 0.33),
+        rgba(255, 255, 255, 0.5),
+        rgba(255, 255, 255, 0.67),
+        rgba(255, 255, 255, 0.83),
+        rgb(255, 255, 255)
+      );
+      top: 0;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      z-index: 5;
+    }
     &__img {
       width: 380px;
       height: 290px;
@@ -109,6 +136,12 @@
     padding: 0 0 143px;
     & .textTitle {
       margin-bottom: 76px;
+    }
+  }
+  .teachers {
+    padding: 0;
+    &__background {
+      display: none;
     }
   }
 }
