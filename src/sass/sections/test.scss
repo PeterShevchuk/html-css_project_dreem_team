@@ -3,10 +3,10 @@
 // ===== Test title
 
 .banner {
-  background-image: url('../images/header-bg.jpg');
+  background-image: url('../../images/svg/header-bg.svg');
   min-height: 414px;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 150%;
 }
 
 .test__icon {
@@ -52,6 +52,10 @@
   margin-bottom: -1px;
 }
 
+.testBlock {
+  margin-bottom: 50px;
+}
+
 .test__about {
   font-family: HelveticaNeueCyr;
   font-weight: 400;
@@ -85,10 +89,17 @@
 
 .test__question {
   margin-bottom: 48px;
+  min-width: 200px;
+  text-align: left;
 }
 
 .test__question:last-child {
   margin-bottom: 32px;
+}
+
+.test__li {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .filter {
@@ -107,14 +118,15 @@
 }
 
 .test__question-variant {
-  display: inline-block;
-  text-align: left;
+  /*display: inline-block;
+  text-align: left;*/
   font-family: HelveticaNeueCyr;
   font-weight: 400;
   font-size: 14px;
   line-height: 27px;
   color: #eebf3e;
   margin-bottom: 14px;
+  margin-right: auto;
 }
 
 .test__question-answer {
@@ -199,6 +211,7 @@
 
   .test__question {
     margin-bottom: 46px;
+    width: 100%;
   }
 
   .test__question:last-child {
