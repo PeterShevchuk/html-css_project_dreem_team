@@ -8,66 +8,96 @@
       & {
         font-size: 60px;
         line-height: 72px;
+        padding-bottom: 20px;
+      }
+    }
+    @media (min-width: $BrPT2) {
+      & {
+        font-size: 90px;
+        line-height: 100px;
+        padding-bottom: 50px;
       }
     }
   }
+  // .textTitle {
+  //   @media (min-width: $BrPT2) {
+  //     & {
+  //       font-size: 30px;
+  //       line-height: 36px;
+  //     }
+  //   }
+  // }
 }
 
 .heroContent {
-  background: url(../../images/education/section-2-bg.svg) no-repeat;
+  background: url(../../images/hero/section-2-bg.png) no-repeat;
   background-size: cover;
   background-position: top;
-  min-height: 1250px;
   margin-top: 20px;
+  min-height: 1150px;
+  @media (min-width: $BrPT) {
+    & {
+      min-height: 1210px;
+    }
+  }
+  @media (min-width: $BrPT2) {
+    & {
+      background: url(../../images/education/section-2-bg.svg) no-repeat;
+      background-size: cover;
+      background-position: top;
+      min-height: 700px;
+    }
+  }
 }
 
 .heroMenu {
-  padding-top: 70px;
-  max-width: 300px;
-  display: grid;
-  grid-template-columns: 300px;
-  //   grid-template-rows: repeat(4, 274px);
-  margin: 0 auto;
-  row-gap: 20px;
+  padding-top: 60px;
   @media (min-width: $BrPT) {
     & {
-      grid-row: 3;
-      position: relative;
-      row-gap: 139px;
-      padding-top: 94px;
-      max-width: 600px;
+      padding-top: 120px;
+      display: grid;
+      grid-gap: 20px 0;
     }
+  }
+  @media (min-width: $BrPT2) {
+    & {
+      grid-gap: 30px;
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  &__list:not(:last-child) {
+    margin-bottom: 20px;
   }
   &__list {
-    display: grid;
-    grid-template-rows: 142px 20px 90px;
-    row-gap: 10px;
     @media (min-width: $BrPT) {
       & {
-        grid-template-rows: 142px;
-        position: relative;
-      }
-    }
-  }
-  &__list-mark {
-    @media (min-width: $BrPT) {
-      & {
-        grid-row: 3;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        text-align: left;
+        justify-self: center;
+        grid-gap: 0 60px;
       }
     }
   }
   &__icon {
-    border-radius: 50%;
     display: block;
-    width: 50%;
     margin: 0 auto;
+    width: 135px;
+    height: 135px;
     @media (min-width: $BrPT) {
       & {
-        width: 237px;
-        height: 233px;
-        margin: 0;
-        position: absolute;
-        left: 0;
+        margin: 0 31px 0;
+        width: 227px;
+        height: 227px;
+      }
+    }
+  }
+  &__leyout {
+    @media (min-width: $BrPT) {
+      & {
+        display: grid;
+        align-self: center;
+        grid-gap: 30px;
       }
     }
   }
@@ -76,25 +106,37 @@
     font-family: 'Mistral';
     color: rgb(237, 198, 90);
     line-height: 22px;
+    text-shadow: 0;
+    transition: all 0.3s linear;
     @media (min-width: $BrPT) {
       & {
-        position: absolute;
-        bottom: -67px;
-        right: -174px;
-        left: 326px;
+        grid-row: 2;
+        position: relative;
         text-align: left;
         font-size: 30px;
         line-height: 35px;
       }
     }
   }
+  .heroMenu__list:hover .heroMenu__name {
+    text-shadow: 7.5px 12.99px 24px;
+    // color: rgba(73, 119, 237, 0.34);
+    background: linear-gradient(
+      90deg,
+      rgba(222, 71, 236, 1) 0%,
+      rgba(117, 168, 249, 1) 100%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
   &__name::before {
     display: none;
-    content: url(../../images/header_img/arrowbak.png);
+    content: url(../../images/hero/arrowbak.png);
     position: absolute;
     left: -67px;
     top: -15px;
-    @media (min-width: $BrPT) and (max-width: $BrPT2) {
+    @media (min-width: $BrPT) {
       & {
         display: block;
       }
@@ -105,13 +147,8 @@
     font-family: 'HelveticaNeueCyr';
     color: rgb(44, 44, 44);
     line-height: 30px;
-
     @media (min-width: $BrPT) {
       & {
-        position: absolute;
-        right: -311px;
-        left: 311px;
-        top: 50px;
         text-align: left;
         font-size: 23px;
         line-height: 35px;
