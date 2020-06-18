@@ -40,6 +40,12 @@
   }
 }
 
+@media (min-width: 1920px) {
+  .header {
+    margin-bottom: 200px;
+  }
+}
+
 .headerNav {
   display: flex;
   padding: 18px 15px 72px;
@@ -63,6 +69,11 @@
     padding: 50px 30px 140px;
     max-width: 1439px;
     margin: 0 auto;
+  }
+}
+@media (min-width: 1920px) {
+  .header {
+    margin-bottom: 200px;
   }
 }
 
@@ -215,7 +226,7 @@
     @media (min-width: $BrPT) {
       & {
         // margin: -127px -151px;
-        margin: -61px -12px;
+        margin: -90px -12px;
       }
     }
   }
