@@ -6,7 +6,7 @@
   background-image: url('../../images/svg/header-bg.svg');
   min-height: 414px;
   background-repeat: no-repeat;
-  background-size: 150%;
+  background-size: 100%;
 }
 
 .test__icon {
@@ -219,7 +219,7 @@
   }
 }
 
-// ========== MEDIA DESCTOP ==========
+// ========== MEDIA DESKTOP ==========
 
 @media (min-width: $BrPD) {
   .testBlock .container {
@@ -241,12 +241,14 @@
   .test__list {
     width: 1420px;
     padding: 0 144px;
+    display: flex;
+    justify-content: space-between;
   }
 
   .test__main {
     width: 262px;
     padding: 0 10px;
-    margin-bottom: 216px;
+    margin-bottom: 195px;
   }
 
   .testBlock .textTitle {
@@ -262,16 +264,36 @@
   //   .over__main {
   //     display: flex;
   //   }
-}
 
-.visually-hidden {
-  position: absolute !important;
-  clip: rect(1px 1px 1px 1px);
-  /* IE6, IE7 */
-  clip: rect(1px, 1px, 1px, 1px);
-  padding: 0 !important;
-  border: 0 !important;
-  height: 1px !important;
-  width: 1px !important;
-  overflow: hidden;
+  .visually-hidden {
+    position: absolute !important;
+    clip: rect(1px 1px 1px 1px);
+    /* IE6, IE7 */
+    clip: rect(1px, 1px, 1px, 1px);
+    padding: 0 !important;
+    border: 0 !important;
+    height: 1px !important;
+    width: 1px !important;
+    overflow: hidden;
+  }
+
+  .test__form {
+    display: flex;
+    justify-content: space-between;
+    max-width: 740px;
+    padding-top: 122px;
+  }
+
+  .test__li {
+    max-width: 350px;
+  }
+
+  .test__question {
+    min-width: auto;
+    width: 50%;
+  }
+
+  .test__question:nth-child(-n + 2) {
+    margin-bottom: 122px;
+  }
 }
