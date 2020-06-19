@@ -108,43 +108,42 @@
   // text-align: center;
   cursor: pointer;
 }
-
-.filter::before {
-  display: inline-block;
-  content: '';
+.test__question-answer {
+  font-weight: 700;
+}
+.test__question-checkbox {
+  display: none;
+}
+.test__question-form {
+  display: block;
+  cursor: pointer;
+  position: relative;
+  padding-left: 0 15px 0 25px;
+  font-size: 13px;
+  color: $TFixColor;
+}
+.test__question .test__question-check:first-child {
+  border: 2px solid $TFixColor;
   width: 20px;
   height: 20px;
-  border: 2px solid #eebf3e;
+  display: inline-block;
+  position: relative;
 }
-
-.test__question-variant {
-  /*display: inline-block;
-  text-align: left;*/
-  font-family: HelveticaNeueCyr;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 27px;
-  color: #eebf3e;
-  margin-bottom: 14px;
-  margin-right: auto;
+.test__question .test__question-check:first-child::before {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  left: 2px;
+  bottom: 2px;
 }
-
-.test__question-answer {
-  display: block;
-  font-family: HelveticaNeueCyr;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 24px;
-  color: #6b6f7a;
-  text-align: left;
-}
-
-// === checkbox ===
-
-.test__check:checked + .filter::before {
-  width: 10px;
-  height: 10px;
-  color: #eebf3e;
+.test__question-checkbox:checked
+  + .test__question-form
+  .test__question-check:first-child:before {
+  content: '';
+  font-size: 40px;
+  background-color: $TFixColor;
+  text-align: center;
+  line-height: 15px;
 }
 
 // ========== MEDIA TABLET ==========
@@ -265,18 +264,6 @@
   //     display: flex;
   //   }
 
-  .visually-hidden {
-    position: absolute !important;
-    clip: rect(1px 1px 1px 1px);
-    /* IE6, IE7 */
-    clip: rect(1px, 1px, 1px, 1px);
-    padding: 0 !important;
-    border: 0 !important;
-    height: 1px !important;
-    width: 1px !important;
-    overflow: hidden;
-  }
-
   .test__form {
     display: flex;
     justify-content: space-between;
@@ -295,5 +282,8 @@
 
   .test__question:nth-child(-n + 2) {
     margin-bottom: 122px;
+  }
+  .test__question-check {
+    display: block !important;
   }
 }
