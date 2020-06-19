@@ -19,14 +19,6 @@
       }
     }
   }
-  // .textTitle {
-  //   @media (min-width: $BrPT2) {
-  //     & {
-  //       font-size: 30px;
-  //       line-height: 36px;
-  //     }
-  //   }
-  // }
 }
 
 .heroContent {
@@ -55,6 +47,7 @@
   @media (min-width: $BrPT) {
     & {
       padding-top: 120px;
+      display: -ms-grid;
       display: grid;
       grid-gap: 20px 0;
     }
@@ -62,6 +55,7 @@
   @media (min-width: $BrPT2) {
     & {
       grid-gap: 30px;
+      -ms-grid-columns: 1fr 30px 1fr;
       grid-template-columns: 1fr 1fr;
     }
   }
@@ -71,9 +65,12 @@
   &__list {
     @media (min-width: $BrPT) {
       & {
+        display: -ms-grid;
         display: grid;
+        -ms-grid-columns: 1fr 60px 1fr;
         grid-template-columns: 1fr 1fr;
         text-align: left;
+        -ms-grid-column-align: center;
         justify-self: center;
         grid-gap: 0 60px;
       }
@@ -95,7 +92,9 @@
   &__leyout {
     @media (min-width: $BrPT) {
       & {
+        display: -ms-grid;
         display: grid;
+        -ms-grid-row-align: center;
         align-self: center;
         grid-gap: 30px;
       }
@@ -107,9 +106,12 @@
     color: rgb(237, 198, 90);
     line-height: 22px;
     text-shadow: 0;
+    -webkit-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
     transition: all 0.3s linear;
     @media (min-width: $BrPT) {
       & {
+        -ms-grid-row: 2;
         grid-row: 2;
         position: relative;
         text-align: left;
@@ -120,7 +122,18 @@
   }
   .heroMenu__list:hover .heroMenu__name {
     text-shadow: 7.5px 12.99px 24px;
-    // color: rgba(73, 119, 237, 0.34);
+    background: -o-linear-gradient(
+      left,
+      rgba(222, 71, 236, 1) 0%,
+      rgba(117, 168, 249, 1) 100%
+    );
+    background: -webkit-gradient(
+      linear,
+      left top,
+      right top,
+      from(rgba(222, 71, 236, 1)),
+      to(rgba(117, 168, 249, 1))
+    );
     background: linear-gradient(
       90deg,
       rgba(222, 71, 236, 1) 0%,

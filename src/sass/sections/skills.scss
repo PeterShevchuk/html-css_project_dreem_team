@@ -71,7 +71,10 @@
 @media (min-width: $BrPT2) {
   .skills {
     &__list {
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
+      -ms-flex-wrap: wrap;
       flex-wrap: wrap;
     }
 

@@ -1,7 +1,3 @@
-// ========== YEARS ==========
-
-//  ===== Years title =====
-
 .yearsBlock .container {
   max-width: 320px;
 }
@@ -12,7 +8,7 @@
 
 .years__icon {
   display: block;
-  background-image: url("../../images/icon\ code.png");
+  background-image: url('../../images/icon\ code.png');
   width: 40px;
   height: 40px;
   background-position: center;
@@ -54,6 +50,8 @@
 }
 
 .years__list {
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
   align-items: stretch;
 }
 
@@ -153,10 +151,19 @@
   }
 
   .years__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: stretch;
+    -ms-flex-align: stretch;
     align-items: stretch;
   }
 
@@ -218,6 +225,7 @@
   }
 
   .years__list {
+    -ms-flex-wrap: nowrap;
     flex-wrap: nowrap;
   }
 

@@ -7,16 +7,19 @@
 
 .teachers {
   margin: 0 auto;
-  // padding: 0 10px;
   position: relative;
   &__background {
     display: none;
   }
   &__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
   }
   &__item {
+    -webkit-box-shadow: 0px 0px 24px 0px rgba(0, 0, 0, 0.1);
     box-shadow: 0px 0px 24px 0px rgba(0, 0, 0, 0.1);
     text-align: center;
     max-width: 270px;
@@ -28,6 +31,7 @@
     width: 270px;
     height: 290px;
     overflow: hidden;
+    -o-object-fit: cover;
     object-fit: cover;
   }
   &__title {
@@ -81,6 +85,38 @@
     &__background {
       display: block;
       position: absolute;
+      background-image: -webkit-gradient(
+        linear,
+        left top,
+        right top,
+        from(rgb(255, 255, 255)),
+        color-stop(rgba(255, 255, 255, 0.8)),
+        color-stop(rgba(255, 255, 255, 0.6)),
+        color-stop(rgba(255, 255, 255, 0.4)),
+        color-stop(rgba(255, 255, 255, 0.2)),
+        color-stop(rgba(255, 255, 255, 0)),
+        color-stop(rgba(255, 255, 255, 0.17)),
+        color-stop(rgba(255, 255, 255, 0.33)),
+        color-stop(rgba(255, 255, 255, 0.5)),
+        color-stop(rgba(255, 255, 255, 0.67)),
+        color-stop(rgba(255, 255, 255, 0.83)),
+        to(rgb(255, 255, 255))
+      );
+      background-image: -o-linear-gradient(
+        left,
+        rgb(255, 255, 255),
+        rgba(255, 255, 255, 0.8),
+        rgba(255, 255, 255, 0.6),
+        rgba(255, 255, 255, 0.4),
+        rgba(255, 255, 255, 0.2),
+        rgba(255, 255, 255, 0),
+        rgba(255, 255, 255, 0.17),
+        rgba(255, 255, 255, 0.33),
+        rgba(255, 255, 255, 0.5),
+        rgba(255, 255, 255, 0.67),
+        rgba(255, 255, 255, 0.83),
+        rgb(255, 255, 255)
+      );
       background-image: linear-gradient(
         to right,
         rgb(255, 255, 255),

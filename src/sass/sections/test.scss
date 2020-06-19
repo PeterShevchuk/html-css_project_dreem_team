@@ -1,7 +1,3 @@
-// ========== TEST ==========
-
-// ===== Test title
-
 .banner {
   background-image: url('../../images/svg/header-bg.svg');
   min-height: 414px;
@@ -37,6 +33,7 @@
   display: inline-block;
   background: #ffffff;
   width: 290px;
+  -webkit-box-shadow: 0 0 20px -5px rgba(0, 0, 0, 1);
   box-shadow: 0 0 20px -5px rgba(0, 0, 0, 1);
   padding: 0 30px;
   margin: 0 auto;
@@ -98,14 +95,14 @@
 }
 
 .test__li {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
 }
 
 .filter {
-  // display: flex;
-  // flex-wrap: wrap;
-  // text-align: center;
   cursor: pointer;
 }
 .test__question-answer {
@@ -240,7 +237,11 @@
   .test__list {
     width: 1420px;
     padding: 0 144px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
   }
 
@@ -256,16 +257,13 @@
     padding-bottom: 40px;
     margin-bottom: -1px;
   }
-  // .test__list {
-  //   display: flex;
-  // }
-
-  //   .over__main {
-  //     display: flex;
-  //   }
 
   .test__form {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
     max-width: 740px;
     padding-top: 122px;
